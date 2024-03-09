@@ -1,0 +1,355 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background :  url(bgimg.svg), linear-gradient(110deg, #f93d66, #6d47d9);
+    background-attachment: fixed;
+    text-transform: capitalize;
+    position: relative;
+   
+   
+}
+html{
+    height: 100vh;
+    width: 100vw;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 900;
+    color: var(--black);
+    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
+  
+}
+.mobile-menu{
+    display: none;
+    padding: 10px;
+    border: none;
+    background-color: #ffc600;
+    margin-top: 5%;
+    font-weight: 700;
+}
+
+.main-section{
+    height: 100%;
+    width: 80%; 
+    margin-left: 10%;
+   
+}
+ul{
+    display: grid;
+    gap: 10px;
+    height: 10vh;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    
+    grid-template-areas:
+    " taco  beer  wine  dess reserv "; 
+    li{
+        list-style-type: none;
+        text-align: center;
+        padding: 6%;
+        a{
+            text-decoration: none;
+            color: var(--black); ;
+            text-transform:uppercase;  
+                
+            
+        }
+    }  
+    }
+ .tacos{
+    grid-area: taco;
+    background-color: #ffc600;;
+ } 
+ .beer{
+    grid-area: beer;
+    background-color: #ffc600;;
+
+ } 
+ .wine{
+    grid-area:wine;
+    background-color: #ffc600;;
+
+ } 
+ .desert{
+    grid-area: dess;
+    background-color: #ffc600;;
+
+ } 
+ .reserv{
+    grid-area:reserv;
+    background-color: #ffc600;
+
+
+ } 
+ .hero-section{
+    display: grid;
+     gap: 20px;
+     height:50%;
+     grid-template-areas:
+    "first  first sec"
+    "first   first sec "
+    "first  first  third "
+    "first   first  third";
+.first-hero{
+        grid-area: first;
+        background:  white url(taco.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        background-position: bottom right;
+        align-items: start;
+        justify-content: center;
+        padding:50px;
+        h1{
+            background-color: #ffc600;
+        }
+        h3{
+            background-color: #ffc600;
+        }
+
+    } .sec-hero{
+        grid-area: sec;
+        background-color:#ffc600 ;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        align-content: center;
+        h1{
+            font-size:50px;
+        }
+
+        
+    }
+    .third-hero{
+        grid-area: third;
+        background-color:#ffc600 ;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        align-content: center;
+        h1{
+            font-size:50px;
+        }
+       
+    }
+
+ }
+ .content{
+    display: grid;
+    gap: 20px;
+    height: 30vh;
+    grid-template-areas: 
+" content1 content2 content3 content4 "
+;
+
+    .content-f{
+        grid-area: content1;
+        background: white;
+        padding: 10px;
+        border: 1px solid white;
+        text-align: center;
+        box-shadow: 0 0 4px  rgba(0,0,0,0.1);
+        p{
+            color: rgba(0,0,0,0.5);  
+        }
+        span{
+            font-size: 50px; 
+        }
+       
+    }
+    .content-s{
+        grid-area: content2;
+        background: white;
+        padding: 10px;
+        border: 1px solid white;
+        text-align: center;
+        box-shadow: 0 0 4px  rgba(0,0,0,0.1);
+        p{
+            color: rgba(0,0,0,0.5);  
+        }
+        span{
+            font-size: 50px; 
+        }
+        
+
+    }
+    .content-t{
+        grid-area: content3;
+        
+        background: white;
+  padding: 10px;
+  border: 1px solid white;
+  text-align: center;
+  box-shadow: 0 0 4px  rgba(0,0,0,0.1);
+  p{
+    color: rgba(0,0,0,0.5);  
+}
+span{
+    font-size: 50px; 
+}
+       
+    }
+    .content-fo{
+        grid-area: content4;
+        background-color: aliceblue;
+        background: white;
+  padding: 10px;
+  border: 1px solid white;
+  text-align: center;
+  box-shadow: 0 0 4px  rgba(0,0,0,0.1);
+  p{
+    color: rgba(0,0,0,0.5);  
+}
+span{
+    font-size: 50px; 
+}
+        
+    }
+
+
+}
+.img-para{
+    background-color: white;
+    display: grid;
+    justify-content: center;
+    height: 50vh;
+    grid-template-columns: 400px 1fr ;
+    align-items: center;
+    padding: 50px;
+    button{
+        padding: 10px;
+        background-color: #ffc600;
+        border: none;
+    }
+}
+.insta{
+position: relative;
+display: inline-block;
+margin-left: 40%;
+margin-top: 2%;
+}
+.insta::before,.insta::after{
+    content: "";
+    position: absolute;
+    width:40vw; 
+    height: 10px; 
+    top: 45%;background-color: #ffc600;
+ 
+}
+.insta::before{
+right: 100%; 
+
+
+}
+.insta::after{
+    left: 100%;
+}
+
+.photos{
+    margin-top: 2%;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns:auto auto auto auto auto auto; 
+img{
+    width: 100%;
+}
+   
+}
+ @media screen  and (max-width:600px) 
+{ 
+   html body{
+    height: 100%;
+    width: 100%;
+   }
+.mobile-menu
+   {
+    display: block;
+
+      }
+      .menu{
+        ul{
+            a{
+                font-size: 10px;
+            }
+        }
+      }
+      .photos{
+        grid-template-columns: auto;
+       img{
+        width: 20rem;
+        height: 20rem;
+       }
+        
+    } 
+    .insta{
+        margin-left: 25%;
+        }
+      .content{
+        grid-template-areas: 
+         "content1"
+          "content2 "
+           "content3" 
+            "content4 ";
+    }
+      .hero-section{
+        grid-template-areas:
+        "first  first"
+        "first   first"
+        " sec third "
+        "  sec third";  
+        .first-hero{
+            h1{
+                background-color: #ffc600;
+                font-size: 20px;
+            }
+            h3{
+                background-color: #ffc600;
+                font-size:15px;
+            }}
+            .sec-hero{
+                h1{
+                    font-size: 30px;
+                }
+            }
+            .third-hero{
+                h1{
+                    font-size: 30px;
+                }
+            }
+     }
+     .img-para{
+        height: 60vh;
+        grid-template-columns: 1fr ;
+        margin-top: 215%;
+        justify-content: center;
+        
+       .img{
+        img{
+            width: 20rem;
+            margin-left: 5%;
+        }
+        }
+        
+        .para-btn{
+            .para{
+              font-size: medium;  
+              margin-left: 7%;
+            }
+            button{
+                margin-left:30%;
+            }
+            }
+       }
+     }
+    
+
+    
+    
+    
+
+ 
